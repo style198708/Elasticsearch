@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.1" />
+    <PackageReference Include="NEST" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Chloe">
+      <HintPath>F:\Core\TYSystem.BaseFramework\Lib\Chloe.dll</HintPath>
+    </Reference>
+    <Reference Include="Chloe.SqlServer">
+      <HintPath>F:\Core\TYSystem.BaseFramework\Lib\Chloe.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlSugar">
+      <HintPath>F:\Core\TYSystem.BaseFramework\Lib\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="TYSystem.BaseFramework.Chloe">
+      <HintPath>F:\Core\TYSystem.BaseFramework\Lib\TYSystem.BaseFramework.Chloe.dll</HintPath>
+    </Reference>
+    <Reference Include="TYSystem.BaseFramework.Configuration">
+      <HintPath>F:\Core\TYSystem.BaseFramework\Lib\TYSystem.BaseFramework.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="TYSystem.BaseFramework.Elasticsearch">
+      <HintPath>F:\Core\TYSystem.BaseFramework\Lib\TYSystem.BaseFramework.Elasticsearch.dll</HintPath>
+    </Reference>
+    <Reference Include="TYSystem.BaseFramework.Serializer">
+      <HintPath>F:\Core\TYSystem.BaseFramework\Lib\TYSystem.BaseFramework.Serializer.dll</HintPath>
+    </Reference>
+    <Reference Include="TYSystem.BaseFramework.SqlSugar">
+      <HintPath>F:\Core\TYSystem.BaseFramework\Lib\TYSystem.BaseFramework.SqlSugar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TableConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
